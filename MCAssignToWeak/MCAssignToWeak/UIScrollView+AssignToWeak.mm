@@ -12,7 +12,7 @@ static const char *s_delegate_ivar_name = NULL;
 @implementation UIScrollView (AssignToWeak)
 
 + (void)load {
-    //_fixupAssginDelegate(self);
+    _fixupAssginDelegate(self);
 }
 
 - (void)fixup_setDelegate:(id)delegate {
